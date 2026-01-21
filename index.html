@@ -1,124 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="hr">
 <head>
 <meta charset="UTF-8">
-<title>Dimi Mont d.o.o. | Pergole, Tende i Ostakljenja</title>
+
+<title>Dimi Mont d.o.o. | Pergole, Bioklimatske Pergole, Tende i Ostakljenja u Hrvatskoj</title>
+
+<meta name="description" content="Dimi Mont d.o.o. iz Crikvenice – izrada i montaža pergola, bioklimatskih pergola, tendi, screen sistema i ostakljenja. Radimo na području cijele Hrvatske.">
+
+<meta name="keywords" content="pergole Hrvatska, bioklimatske pergole, tende, staklene stijene, ostakljenje terasa, screen sistemi, pergole Crikvenica, pergole Rijeka, pergole Zagreb">
+
+<meta name="author" content="Dimi Mont d.o.o.">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Dimi Mont d.o.o. | Pergole i ostakljenja u Hrvatskoj">
+<meta property="og:description" content="Stručna izrada i montaža pergola, bioklimatskih pergola, staklenih sustava i tendi. Radimo na području cijele Hrvatske.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.dimimont.hr">
+<meta property="og:image" content="https://www.dimimont.hr/logo.png">
+
+<link rel="icon" href="favicon.png">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"Dimi Mont d.o.o.",
+"image":"https://www.dimimont.hr/logo.png",
+"url":"https://www.dimimont.hr",
+"telephone":"+385998365646",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Crikvenica",
+"addressCountry":"HR"
+},
+"areaServed":"Croatia",
+"description":"Izrada i montaža pergola, bioklimatskih pergola, tendi, screen sistema i ostakljenja na području cijele Hrvatske."
+}
+</script>
 
 <style>
 :root{
-  --green:#0f5f3a;
-  --orange:#f7931e;
+--green:#0f5f3a;
+--orange:#f7931e;
+--bg:#f6f8f7;
+--text:#1f1f1f;
+--card:#ffffff;
 }
-
+body.dark{
+--bg:#0f1720;
+--text:#f0f0f0;
+--card:#1b2633;
+}
+*{box-sizing:border-box;}
 body{
-  margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:#f6f8f7;
-  color:#222;
+margin:0;
+font-family:Segoe UI,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+transition:.3s;
 }
-
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:white;
-  box-shadow:0 4px 20px rgba(0,0,0,.08);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5vw;
+background:var(--card);
+box-shadow:0 4px 20px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:1000;
 }
-
-.logo{ height:60px; }
-
+.logo{height:55px;}
+.top-buttons{display:flex;gap:10px;}
 .btn{
-  background:var(--orange);
-  color:white;
-  padding:12px 25px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
+background:var(--orange);
+color:white;
+padding:10px 22px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
 }
-
+.toggle{background:var(--green);}
 .hero{
-  background:linear-gradient(135deg,#0b5f3a,#2e8b57);
-  color:white;
-  padding:100px 40px;
+padding:12vh 5vw;
+background:linear-gradient(135deg,#0b5f3a,#2e8b57);
+color:white;
+text-align:center;
 }
-
-.hero h1{
-  font-size:3rem;
-  max-width:900px;
-}
-
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);}
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:30px;
-  padding:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+padding:60px 5vw;
 }
-
 .grid div{
-  background:white;
-  padding:40px;
-  border-radius:15px;
-  text-align:center;
-  font-weight:bold;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-  border-top:6px solid var(--orange);
+background:var(--card);
+padding:30px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-top:6px solid var(--orange);
 }
-
-.section{
-  padding:80px 60px;
-  background:white;
+.section{padding:80px 5vw;}
+.product{
+background:var(--card);
+padding:30px;
+border-radius:15px;
+margin-bottom:25px;
 }
-
+.product h3{color:var(--green);}
+.mission{
+background:linear-gradient(135deg,#0f5f3a,#2e8b57);
+color:white;
+padding:50px;
+border-radius:20px;
+}
 .contact{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  background:#f0f4f3;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
 }
-
-input, textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:12px;
-  border-radius:6px;
-  border:1px solid #ccc;
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:12px;
+border-radius:8px;
+border:1px solid #ccc;
 }
-
 button{
-  background:var(--green);
-  color:white;
-  border:none;
-  padding:15px;
-  width:100%;
-  font-size:16px;
-  border-radius:8px;
+background:var(--green);
+color:white;
+border:none;
+padding:15px;
+width:100%;
+font-size:16px;
+border-radius:10px;
 }
-
 footer{
-  background:#243b32;
-  color:white;
-  padding:40px;
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
+background:#243b32;
+color:white;
+padding:40px 5vw;
+display:grid;
+gap:20px;
 }
-
-/* WhatsApp floating */
 .whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:#25d366;
-  color:white;
-  font-size:28px;
-  padding:18px;
-  border-radius:50%;
-  text-decoration:none;
-  box-shadow:0 6px 20px rgba(0,0,0,.3);
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+font-size:28px;
+padding:18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+@media(max-width:900px){
+.contact{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -126,83 +170,75 @@ footer{
 <body>
 
 <header>
-  <img src="logo.png" class="logo">
-  <a href="https://wa.me/385998365646?text=Pozdrav,%20zainteresiran%20sam%20za%20vašu%20ponudu." class="btn">
-    Pošalji WhatsApp
-  </a>
+<img src="logo.png" class="logo">
+<div class="top-buttons">
+<button class="btn toggle" onclick="toggleTheme()">🌙</button>
+<a href="https://wa.me/385998365646?text=Pozdrav,%20zanima%20me%20ponuda." class="btn">WhatsApp</a>
+</div>
 </header>
 
 <section class="hero">
-  <h1>Pergole, Bioklimatske pergole, Tende, Screen sistemi, Stakleni sustavi</h1>
-  <p>Dimi Mont d.o.o. – Crikvenica</p>
-  <a href="#kontakt" class="btn">Zatraži ponudu</a>
+<h1>Pergole, Bioklimatske Pergole, Tende i Stakleni sustavi</h1>
+<p>Dimi Mont d.o.o. – Crikvenica | Radimo u cijeloj Hrvatskoj</p>
 </section>
 
 <section class="grid">
-  <div>Pergole</div>
-  <div>Bioklimatske pergole</div>
-  <div>Tende</div>
-  <div>Screen sistemi</div>
-  <div>Stakleni sustavi</div>
-  <div>Ostakljenja</div>
+<div>Pergole</div>
+<div>Bioklimatske</div>
+<div>Tende</div>
+<div>Screen</div>
+<div>Stakla</div>
+<div>Ostakljenja</div>
 </section>
 
 <section class="section">
-  <h2>Naša rješenja</h2>
-  <p>
-  Dimi Mont d.o.o. pruža moderna rješenja za zaštitu od sunca, kiše i vjetra koja vaš vanjski
-  prostor pretvaraju u ugodno mjesto za boravak tijekom cijele godine.
-  </p>
+<div class="product"><h3>Pergola samostojeća</h3><p>Suvremeni krovni sistem na čeličnoj konstrukciji bez pričvršćivanja za objekt.</p></div>
+<div class="product"><h3>Pergole</h3><p>Moderan sustav natkrivanja s LED rasvjetom i otpornošću na sve vremenske uvjete.</p></div>
+<div class="product"><h3>Bioklimatske pergole</h3><p>Pomične lamele za kontrolu sunca, svjetla i ventilacije.</p></div>
+<div class="product"><h3>Stakleni sustavi</h3><p>Klizni, fiksni i giljotina sistemi za zatvaranje terasa.</p></div>
 </section>
 
 <section class="section">
-  <h2>Naša misija</h2>
-  <p>
-  Naš cilj je pružiti kvalitetna, dugotrajna i estetski atraktivna rješenja prilagođena
-  svakom klijentu i prostoru.
-  </p>
+<div class="mission">
+<h2>Naša misija</h2>
+<p>Naš cilj je pružiti kompletna rješenja za zaštitu od vremenskih uvjeta kroz znanje, tehnologiju i kvalitetu.</p>
+</div>
 </section>
 
-<section class="section contact" id="kontakt">
-  <div>
-    <h2>Pošaljite upit</h2>
+<section class="section contact">
+<div>
+<h2>Pošaljite upit</h2>
+<form action="https://formsubmit.co/info.dimi.mont@gmail.com" method="POST">
+<input name="ime" placeholder="Ime" required>
+<input name="email" placeholder="Email" required>
+<textarea name="poruka" placeholder="Poruka"></textarea>
+<button>Pošalji</button>
+</form>
+</div>
 
-    <form action="https://formsubmit.co/info.dimi.mont@gmail.com" method="POST">
-      <input type="text" name="ime" placeholder="Ime" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="telefon" placeholder="Telefon">
-      <textarea name="poruka" placeholder="Vaša poruka" required></textarea>
-
-      <input type="hidden" name="_subject" value="Novi upit s dimimont.hr">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit">Pošalji</button>
-    </form>
-  </div>
-
-  <div>
-    <h2>Dimi Mont d.o.o.</h2>
-    <p>Crikvenica</p>
-    <p>🌐 www.dimimont.hr</p>
-    <p>📧 info.dimi.mont@gmail.com</p>
-    <p>📞 099 836 5646</p>
-  </div>
+<div>
+<h2>Dimi Mont d.o.o.</h2>
+<p>Crikvenica</p>
+<p>www.dimimont.hr</p>
+<p>info.dimi.mont@gmail.com</p>
+<p>099 836 5646</p>
+</div>
 </section>
 
 <footer>
-  <div>
-    <strong>Dimi Mont d.o.o.</strong><br>
-    Crikvenica<br>
-    www.dimimont.hr<br>
-    info.dimi.mont@gmail.com<br>
-    099 836 5646
-  </div>
-  <div>© 2026 Dimi Mont d.o.o.</div>
+<div>Dimi Mont d.o.o. – Crikvenica</div>
+<div>© 2026</div>
 </footer>
 
-<a href="https://wa.me/385998365646?text=Pozdrav,%20zanima%20me%20ponuda%20za%20pergole." class="whatsapp">
-💬
-</a>
+<a class="whatsapp" href="https://wa.me/385998365646">💬</a>
+
+<script>
+function toggleTheme(){
+document.body.classList.toggle("dark");
+localStorage.setItem("theme",document.body.classList.contains("dark")?"dark":"light");
+}
+if(localStorage.getItem("theme")==="dark")document.body.classList.add("dark");
+</script>
 
 </body>
 </html>
