@@ -3,127 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pergole, Nadstrešnice, Ostakljenja, Automatika</title>
+<title>Pergole i nadstrešnice – DimiMont</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg:#020617;
-  --card:rgba(255,255,255,0.05);
-  --text:#fff;
-  --muted:#94a3b8;
-  --accent:#38bdf8;
+  --bg: #020617;
+  --card: rgba(255,255,255,0.05);
+  --text: #fff;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
 }
-
-body.light{
-  --bg:#f8fafc;
-  --card:#fff;
-  --text:#020617;
-  --muted:#475569;
-  --accent:#0284c7;
+body.light {
+  --bg: #f8fafc;
+  --card: #fff;
+  --text: #020617;
+  --muted: #475569;
+  --accent: #0284c7;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;transition:.3s;}
 
 body{
-  font-family:Inter,sans-serif;
+  font-family:'Inter',sans-serif;
   background:var(--bg);
   color:var(--text);
 }
 
 /* NAV */
 nav{
-  position:fixed;
-  top:0;
-  width:100%;
+  position:fixed; top:0; width:100%;
   padding:15px 30px;
-  display:flex;
-  justify-content:space-between;
-  backdrop-filter:blur(10px);
+  display:flex; justify-content:space-between;
   background:rgba(2,6,23,.8);
+  backdrop-filter:blur(8px);
   z-index:1000;
 }
 body.light nav{background:rgba(255,255,255,.9);}
-
-nav a{color:var(--text);margin:0 15px;text-decoration:none;}
+nav a{color:var(--text);margin:0 15px;text-decoration:none;font-weight:500;}
 nav a:hover{color:var(--accent);}
 .toggle{cursor:pointer;font-size:20px}
 
 /* HERO */
-header{
-  padding:150px 20px 80px;
-  text-align:center;
-}
+header{padding:150px 20px 80px;text-align:center;}
 header img{width:120px;animation:float 3s infinite;}
-@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes float{50%{transform:translateY(-10px);}}
 h1{font-size:2.6rem;margin:20px 0;}
-.subtitle{color:var(--muted);font-size:1.1rem}
+.subtitle{color:var(--muted);font-size:1.1rem;}
 
 /* SECTIONS */
-section{max-width:900px;margin:auto;padding:80px 20px}
+section{max-width:900px;margin:auto;padding:80px 20px;}
 .card{
   background:var(--card);
   border-radius:16px;
   padding:30px;
   margin-bottom:30px;
-  opacity:0;
-  transform:translateY(40px);
+  opacity:0;transform:translateY(40px);
 }
 .show{opacity:1;transform:translateY(0);}
 
-/* FOOTER */
-footer{text-align:center;padding:40px;color:var(--muted)}
-
 /* WhatsApp */
 .whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:#25D366;
-  color:#fff;
-  padding:15px 22px;
-  border-radius:50px;
-  font-weight:600;
-  text-decoration:none;
+  position:fixed; bottom:25px; right:25px;
+  background:#25D366;color:#fff;
+  padding:15px 22px;border-radius:50px;
+  font-weight:600;text-decoration:none;
   box-shadow:0 10px 25px rgba(0,0,0,.4);
   animation:pulse 2s infinite;
   cursor:pointer;
 }
 @keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}
-  70%{box-shadow:0 0 0 20px rgba(37,211,102,0)}
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
+  70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
 }
 
 /* Popup */
 .call-popup{
-  position:fixed;
-  bottom:100px;
-  right:25px;
-  background:var(--card);
-  color:var(--text);
-  padding:20px;
-  border-radius:16px;
-  width:260px;
-  display:none;
+  position:fixed; bottom:100px; right:25px;
+  background:var(--card); color:var(--text);
+  padding:20px;border-radius:16px;
+  width:260px;display:none;
   box-shadow:0 20px 50px rgba(0,0,0,.5);
 }
 .call-popup a{
-  display:block;
-  background:var(--accent);
-  color:#fff;
-  padding:10px;
-  margin:10px 0;
-  text-align:center;
-  border-radius:10px;
+  display:block; background:var(--accent);
+  color:#fff;padding:10px;margin:10px 0;
+  text-align:center;border-radius:10px;
   text-decoration:none;
 }
 .call-popup span{
-  position:absolute;
-  top:10px;
-  right:15px;
-  cursor:pointer;
+  position:absolute; top:10px; right:15px; cursor:pointer;
 }
 </style>
 </head>
@@ -134,41 +104,48 @@ footer{text-align:center;padding:40px;color:var(--muted)}
   <strong>DimiMont</strong>
   <div>
     <a href="#about">O nama</a>
-    <a href="#projects">Usluge</a>
+    <a href="#services">Usluge</a>
     <a href="#contact">Kontakt</a>
     <span class="toggle" onclick="toggleTheme()">🌙</span>
   </div>
 </nav>
 
 <header>
-  <img src="logo.png">
-  <h1>Pergole, Nadstrešnice, Ostakljenja, Rasvjeta, Automatika</h1>
-  <p class="subtitle">Radimo na području cijele Hrvatske 🇭🇷</p>
+  <img src="logo.png" alt="Logo">
+  <h1>Izrada pergola, pergotendi, ostakljenja i nadstrešnica</h1>
+  <p class="subtitle">Kvalitetna rješenja za terase, vrtove i vanjske prostore – cijela Hrvatska 🇭🇷</p>
 </header>
 
 <section id="about">
   <div class="card">
     <h2>👷 O nama</h2>
-    <p>Specijalizirani smo za izradu modernih pergola, nadstrešnica i ostakljenja po mjeri. Radimo kvalitetno, brzo i pouzdano – gdje god se nalazili u Hrvatskoj.</p>
+    <p>Specijalizirani smo za izradu i montažu pergola, pergotendi, bočnih ostakljenja i nadstrešnica po mjeri. Naša rješenja omogućuju udobno korištenje vanjskih prostora tijekom cijele godine, bez obzira na vremenske uvjete – sunce, kišu ili vjetar. :contentReference[oaicite:1]{index=1}</p>
   </div>
 </section>
 
-<section id="projects">
+<section id="services">
   <div class="card">
     <h2>🛠 Naše usluge</h2>
-    <p>Pergole • Nadstrešnice • Ostakljenja • LED rasvjeta • Automatika</p>
+    <ul>
+      <li><strong>Pergole</strong> – moderno sjenilo koje povezuje estetiku i funkcionalnost. :contentReference[oaicite:2]{index=2}</li>
+      <li><strong>Pergotende</strong> – fleksibilna zaštita terasa s automatskim opcijama i LED rasvjetom. :contentReference[oaicite:3]{index=3}</li>
+      <li><strong>Bočna ostakljenja</strong> – dodatna zaštita prostora za ugodniji boravak. :contentReference[oaicite:4]{index=4}</li>
+      <li><strong>Nadstrešnice</strong> – pouzdana zaštita od vremenskih uvjeta za različite prostore.</li>
+      <li><strong>Automatika i LED rasvjeta</strong> – dodajte funkcionalnost koja podiže vašu pergolu na višu razinu.</li>
+    </ul>
+    <p>Zatražite ponudu po mjeri i transformirajte svoj vanjski prostor u mjesto za uživanje.</p>
   </div>
 </section>
 
 <section id="contact">
   <div class="card">
     <h2>📞 Kontakt</h2>
-    <p>Zatražite besplatnu ponudu putem WhatsAppa ili pozivom.</p>
+    <p>Kliknite gumb ispod za brzu ponudu ili nas nazovite.</p>
   </div>
 </section>
 
 <footer>
-© 2026 – DimiMont • Cijela Hrvatska
+© 2026 – DimiMont • Radimo na području cijele Hrvatske
 </footer>
 
 <a class="whatsapp" onclick="openPopup()">💬 Zatraži ponudu</a>
@@ -188,8 +165,10 @@ function openPopup(){document.getElementById("callPopup").style.display="block";
 function closePopup(){document.getElementById("callPopup").style.display="none";}
 
 const cards=document.querySelectorAll(".card");
-const observer=new IntersectionObserver(e=>{
-  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("show")});
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add("show"); }
+  });
 });
 cards.forEach(c=>observer.observe(c));
 </script>
