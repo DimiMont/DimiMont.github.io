@@ -2,176 +2,49 @@
 <html lang="hr">
 <head>
 <meta charset="UTF-8">
+<title>Dimi Mont d.o.o. | Pergole i Stakleni sustavi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pergole i nadstrešnice – DimiMont</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --bg: #020617;
-  --card: rgba(255,255,255,0.05);
-  --text: #fff;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
-}
-body.light {
-  --bg: #f8fafc;
-  --card: #fff;
-  --text: #020617;
-  --muted: #475569;
-  --accent: #0284c7;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;transition:.3s;}
-
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-
-/* NAV */
-nav{
-  position:fixed; top:0; width:100%;
-  padding:15px 30px;
-  display:flex; justify-content:space-between;
-  background:rgba(2,6,23,.8);
-  backdrop-filter:blur(8px);
-  z-index:1000;
-}
-body.light nav{background:rgba(255,255,255,.9);}
-nav a{color:var(--text);margin:0 15px;text-decoration:none;font-weight:500;}
-nav a:hover{color:var(--accent);}
-.toggle{cursor:pointer;font-size:20px}
-
-/* HERO */
-header{padding:150px 20px 80px;text-align:center;}
-header img{width:120px;animation:float 3s infinite;}
-@keyframes float{50%{transform:translateY(-10px);}}
-h1{font-size:2.6rem;margin:20px 0;}
-.subtitle{color:var(--muted);font-size:1.1rem;}
-
-/* SECTIONS */
-section{max-width:900px;margin:auto;padding:80px 20px;}
-.card{
-  background:var(--card);
-  border-radius:16px;
-  padding:30px;
-  margin-bottom:30px;
-  opacity:0;transform:translateY(40px);
-}
-.show{opacity:1;transform:translateY(0);}
-
-/* WhatsApp */
-.whatsapp{
-  position:fixed; bottom:25px; right:25px;
-  background:#25D366;color:#fff;
-  padding:15px 22px;border-radius:50px;
-  font-weight:600;text-decoration:none;
-  box-shadow:0 10px 25px rgba(0,0,0,.4);
-  animation:pulse 2s infinite;
-  cursor:pointer;
-}
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
-  70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
-}
-
-/* Popup */
-.call-popup{
-  position:fixed; bottom:100px; right:25px;
-  background:var(--card); color:var(--text);
-  padding:20px;border-radius:16px;
-  width:260px;display:none;
-  box-shadow:0 20px 50px rgba(0,0,0,.5);
-}
-.call-popup a{
-  display:block; background:var(--accent);
-  color:#fff;padding:10px;margin:10px 0;
-  text-align:center;border-radius:10px;
-  text-decoration:none;
-}
-.call-popup span{
-  position:absolute; top:10px; right:15px; cursor:pointer;
-}
-</style>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-  <strong>DimiMont</strong>
-  <div>
-    <a href="#about">O nama</a>
-    <a href="#services">Usluge</a>
-    <a href="#contact">Kontakt</a>
-    <span class="toggle" onclick="toggleTheme()">🌙</span>
-  </div>
-</nav>
+<header class="topbar">
+  <img src="logo.png" class="logo">
 
-<header>
-  <img src="logo.png" alt="Logo">
-  <h1>Izrada pergola, pergotendi, ostakljenja i nadstrešnica</h1>
-  <p class="subtitle">Kvalitetna rješenja za terase, vrtove i vanjske prostore – cijela Hrvatska 🇭🇷</p>
+  <div class="top-actions">
+    <button id="themeToggle">🌙</button>
+    <a href="https://wa.me/385998365646" class="call-btn">Nazovi odmah</a>
+  </div>
 </header>
 
-<section id="about">
-  <div class="card">
-    <h2>👷 O nama</h2>
-    <p>Specijalizirani smo za izradu i montažu pergola, pergotendi, bočnih ostakljenja i nadstrešnica po mjeri. Naša rješenja omogućuju udobno korištenje vanjskih prostora tijekom cijele godine, bez obzira na vremenske uvjete – sunce, kišu ili vjetar. :contentReference[oaicite:1]{index=1}</p>
-  </div>
+<section class="hero">
+  <h1>Pergole, Nadstrešnice, Tende,<br> Ostakljenja, Rasvjeta, Automatika</h1>
+  <p>Dimi Mont d.o.o. – Crikvenica</p>
+  <a href="#kontakt" class="cta">Zatraži ponudu</a>
 </section>
 
-<section id="services">
-  <div class="card">
-    <h2>🛠 Naše usluge</h2>
-    <ul>
-      <li><strong>Pergole</strong> – moderno sjenilo koje povezuje estetiku i funkcionalnost. :contentReference[oaicite:2]{index=2}</li>
-      <li><strong>Pergotende</strong> – fleksibilna zaštita terasa s automatskim opcijama i LED rasvjetom. :contentReference[oaicite:3]{index=3}</li>
-      <li><strong>Bočna ostakljenja</strong> – dodatna zaštita prostora za ugodniji boravak. :contentReference[oaicite:4]{index=4}</li>
-      <li><strong>Nadstrešnice</strong> – pouzdana zaštita od vremenskih uvjeta za različite prostore.</li>
-      <li><strong>Automatika i LED rasvjeta</strong> – dodajte funkcionalnost koja podiže vašu pergolu na višu razinu.</li>
-    </ul>
-    <p>Zatražite ponudu po mjeri i transformirajte svoj vanjski prostor u mjesto za uživanje.</p>
-  </div>
+<section class="grid">
+  <div>Pergole</div>
+  <div>Nadstrešnice</div>
+  <div>Tende</div>
+  <div>Ostakljenja</div>
+  <div>Rasvjeta</div>
+  <div>Automatika</div>
 </section>
 
-<section id="contact">
-  <div class="card">
-    <h2>📞 Kontakt</h2>
-    <p>Kliknite gumb ispod za brzu ponudu ili nas nazovite.</p>
+<section class="contact" id="kontakt">
+  <div class="form">
+    <h2>Pošaljite upit</h2>
+    <input placeholder="Ime">
+    <input placeholder="Email">
+    <input placeholder="Telefon">
+    <textarea placeholder="Vaša poruka"></textarea>
+    <button>Pošalji</button>
   </div>
-</section>
 
-<footer>
-© 2026 – DimiMont • Radimo na području cijele Hrvatske
-</footer>
-
-<a class="whatsapp" onclick="openPopup()">💬 Zatraži ponudu</a>
-
-<div class="call-popup" id="callPopup">
-  <h3>📞 Kontaktirajte nas</h3>
-  <p>Odgovaramo brzo – cijela Hrvatska</p>
-  <a href="https://wa.me/385XXXXXXXXX" target="_blank">WhatsApp</a>
-  <a href="tel:+385XXXXXXXXX">Nazovi</a>
-  <span onclick="closePopup()">✖</span>
-</div>
-
-<script>
-function toggleTheme(){document.body.classList.toggle("light");}
-
-function openPopup(){document.getElementById("callPopup").style.display="block";}
-function closePopup(){document.getElementById("callPopup").style.display="none";}
-
-const cards=document.querySelectorAll(".card");
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){ e.target.classList.add("show"); }
-  });
-});
-cards.forEach(c=>observer.observe(c));
-</script>
-
-</body>
-</html>
+  <div class="info">
+    <h3>Dimi Mont d.o.o.</h3>
+    <p>Crikvenica</p>
+    <p>info.dimi.mont@
